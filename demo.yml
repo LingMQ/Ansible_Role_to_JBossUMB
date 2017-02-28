@@ -5,5 +5,7 @@
     - messagebus
 
   tasks:
-    - command: /bin/false
+    - name: Hello Message
+      debug:
+	msg: "Hello World! TICKET: haha...\"
 
