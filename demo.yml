@@ -1,10 +1,8 @@
 ---
 - hosts: all
-
+  tasks:
+    - name: Hello
+      debug:
+        msg: "Hello!"
   roles:
     - messagebus
-
-  tasks:
-    - name: Hello Message
-      debug:
-	msg: "Hello World! TICKET: haha"
