@@ -1,0 +1,21 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+   - name: Hello Message
+     debug:
+       msg: "Hello World!"
+   - name: Sample playbook var (username)
+     debug: var=username
+   - name: Sample playbook var (repo)
+     debug: var=repo
+   - debug:
+     msg: "TICKET: Sample data for the user"
+   - debug:
+     msg: "TICKET: More sample data for the user"
+
+  vars:
+    username: "Default username value"
+    repo: "Default repo value"
+  roles:
+    - messagebus
+
