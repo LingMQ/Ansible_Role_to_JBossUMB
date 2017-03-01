@@ -4,5 +4,9 @@
     - name: Hello
       debug:
         msg: "Hello!"
+    - name: Sample playbook var (username)
+      debug: var=username
+  vars:
+    username: "DefaultUsernameValue"
   roles:
     - messagebus
