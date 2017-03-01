@@ -160,7 +160,7 @@ class CallbackModule(CallbackModule):
 
     def v2_playbook_on_play_start(self, play):
         super(CallbackModule, self).v2_playbook_on_play_start(play)
-
+        '''
         manager = play.get_variable_manager()
         variables = manager.get_vars(play.get_loader(), play=play)
 
@@ -185,7 +185,7 @@ class CallbackModule(CallbackModule):
             self.jenkins_usrname = variables.get('jenkins_prod_usr')
             self.jenkins_api_token = variables.get('jenkins_prod_usr_api_token')
         else:
-            raise ValueError('Unknown jenkins environment "{}"'.format(self.jenkins_env))
+            raise ValueError('Unknown jenkins environment "{}"'.format(self.jenkins_env))'''
 
     def v2_runner_on_failed(self, result, ignore_errors=False):
         super(CallbackModule, self).v2_runner_on_failed(result, ignore_errors)
