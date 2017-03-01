@@ -154,6 +154,8 @@ class CallbackModule(CallbackModule):
         print(result._task)
         print("~~")
         print(result._task.args)
+        print(">>>>")
+        print(result._task.delegate_to)
         print("where")
         print(result._result.get('_ansible_delegated_vars', None))
         print("hhhh")
