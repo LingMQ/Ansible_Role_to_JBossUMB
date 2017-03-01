@@ -150,6 +150,8 @@ class CallbackModule(CallbackModule):
         print(result._result)
         print("hahatest again")
         print(result._display)
+        print("hee")
+        print(result._task)
 
         if result._task.action == 'debug':
             msg = result._task.args.get('msg')
