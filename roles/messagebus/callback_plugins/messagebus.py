@@ -149,9 +149,11 @@ class CallbackModule(CallbackModule):
         print("testtesttest")
         print(result._result)
         print("hee")
-        print(result._task)
+        print(result._task.action)
         print("where")
-
+        print(result._result.get('_ansible_delegated_vars', None))
+        print("hhhh")
+        
         if result._task.action == 'debug':
             msg = result._task.args.get('msg')
             if msg:
