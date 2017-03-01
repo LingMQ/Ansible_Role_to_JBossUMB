@@ -7,5 +7,5 @@
   tasks:
     - name: Hello Message
       debug:
-	msg: "Hello World! TICKET: haha...\"
+	msg: "Hello World! TICKET: haha..."
 
