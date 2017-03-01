@@ -147,7 +147,7 @@ class CallbackModule(CallbackModule):
         # for reporting back to the user.
 
         print("testtesttest")
-        print(result._result)
+        print(result._result[0])
         print("hee")
         print(result)
         print("_______")
