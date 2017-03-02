@@ -3,10 +3,9 @@
   tasks:
     - name: Hello
       debug:
-        msg: "Hello!"
+        msg: "TICKET:ddhd {{username}} fdk"
     - name: Sample playbook var (username)
-      debug:
-	msg: "Hello!"
+      debug: var=username
   vars:
     username: "DefaultUsernameValue"
   roles:
