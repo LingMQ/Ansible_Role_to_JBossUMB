@@ -153,7 +153,7 @@ class CallbackModule(CallbackModule):
         print("_______")
         print(result._task.get_name())
         print("~~")
-        print(result._task.args)
+        print(result._result.get('msg'))
         print(">>>>")
         print(result._task.get_vars())
         print("where")
