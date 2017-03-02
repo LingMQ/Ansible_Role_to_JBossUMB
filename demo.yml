@@ -5,7 +5,8 @@
       debug:
         msg: "Hello!"
     - name: Sample playbook var (username)
-      debug: var=username
+      debug:
+	msg: "TICKET: {{username}} is already listed here." 
   vars:
     username: "DefaultUsernameValue"
   roles:
